@@ -9,13 +9,13 @@ int main()
 	cout << "Pattern A" << endl;
 	for (int row = 1; row <= totalRows; row++)
 	{
-		//Left side of the pattern
+		//Left side
 		for (int i = 1; i <= row; i++)
 		{
 			cout << "+";
 		}
 
-		//Space between left and right side of the pattern
+		//Space 
 		cout << " ";
 
 		// Right side
@@ -25,8 +25,23 @@ int main()
 		cout << endl; // Next row
 	}
 
+	// Pattern B
+	cout << "Pattern B" << endl;
+	for (int row = 1; row <= totalRows; row++)
+	{
+		// Left side
+		for (int i = 1; i <= row; i++)
+			cout << "+";
 
-	
+		// Space
+		cout << " ";
+
+		// Right side
+		for (int i = 1; i <= totalRows + 1 - row; i++)
+			cout << "+";
+
+		cout << endl;
+	}
 
 	return 0;
 
