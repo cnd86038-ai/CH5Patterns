@@ -19,6 +19,15 @@ int main()
 	cout << " ";
 
 	//Right side of the pattern
+	for (int row = 1; row <= totalRows; row++)
+	{
+		for (int i = 1; i <= totalRows - row + 1; i++)
+		{
+			cout << "+";
+		}
+	}
+
+
 
 	return 0;
 }
