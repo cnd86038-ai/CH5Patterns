@@ -17,24 +17,16 @@ int main()
 	cout << endl; // Space between patterns
 
 
-	// Pattern B
+	cout << endl; // Space between patterns
+
+	// Pattern B: right angle at top-right
 	cout << "Pattern B" << endl;
-	for (int row = 1; row <= totalRows; row++)
-	{
-		// Left side
-		for (int i = 1; i <= row; i++)
+	for (int row = totalRows; row >= 1; row--) {
+		for (int i = 1; i <= row; i++) {
 			cout << "+";
-
-		// Space
-		cout << " ";
-
-		// Right side
-		for (int i = 1; i <= totalRows + 1 - row; i++)
-			cout << "+";
-
+		}
 		cout << endl;
 	}
 
 	return 0;
-
 }
