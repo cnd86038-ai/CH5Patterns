@@ -14,40 +14,19 @@ int main()
 		{
 			cout << "+";
 		}
-	}
-	//Space between left and right side of the pattern
-	cout << " ";
 
-	//Right side of the pattern
-	for (int row = 1; row <= totalRows; row++)
-	{
-		for (int i = 1; i <= totalRows - row + 1; i++)
-		{
-			cout << "+";
-		}
-		cout << endl; //Next Row
-	}
-
-	cout << endl; //Space between patterns
-	//Print Pattern B
-	cout << "Pattern B" << endl;
-	for (int row = 1; row <= totalRows; row++)
-	{
-		//Left side of the pattern
-		for (int i = 1; i <= totalRows - row + 1; i++)
-		{
-			cout << "+";
-		}
-		// Space between left and right side of the pattern
+		//Space between left and right side of the pattern
 		cout << " ";
 
-		//Right side of the pattern
-		for (int i = 1; i <= row; i++)
-		{
+		// Right side
+		for (int i = 1; i <= totalRows + 1 - row; i++)
 			cout << "+";
-		}
-		cout << endl; //Next Row
+
+		cout << endl; // Next row
 	}
+
+
+	
 
 	return 0;
 
